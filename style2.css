@@ -10,3 +10,22 @@ h1, h2, h3 {
 h3 {
   color: #B0BEC5; 
 }
+.imagen-producto{
+    height: 200px;
+    width: 200px;
+}
+
+.card{
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 15px;
+}
+
+
+.contenedor-cards{
+    display: flex;
+    flex-direction: row;
+}
