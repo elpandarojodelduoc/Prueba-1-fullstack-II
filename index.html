@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">  
     <title>Pasteleria mil sabores</title>
 </head>
 
@@ -15,7 +17,7 @@
     <nav id="nav-menu">
       <a href="#inicio">Inicio</a>
       <a href="#Catalogo">Catalogo</a>
-      <a href="#crear-cuenta">crear-cuenta</a>
+      <a href="#crear-cuenta">crear cuenta</a>
       <a href="#contacto">Contacto</a>
     </nav>
     <button id="menu-btn">Menu</button>
@@ -25,14 +27,14 @@
           <img height= "30px" src="img/carrito.jpg" id="img-carrito" alt="carrito">
           <div id="carrito">
             <table id="lista-carrito">
-              <th>
+              <thead>
                 <tr>
                   <th>imagen</th>
                   <th>nombre</th>
                   <th>precio</th>
                   <th></th>
                 </tr>
-              </th>
+              </thead>
               <tbody></tbody>
             </table>
             <a href="#" id="vaciar carrito" class="btn-3">Vaciar Carrito</a>
@@ -49,28 +51,224 @@
         <p>Desde 1974 horneamos las tortas y postres que acompañan los momentos más importantes
         de miles de familias chilenas. Hoy renovamos nuestra tienda online para que pidas
         tu torta favorita en pocos clics.</p>
-      </div>
-      <div>
+
         <a href="#informacion" class="btn-1">informacion</a>
       </div>
-      <img height="200px" src="img/pasteleria mil sabores.png">
+
+      <img height="300px" src="img/pasteleria mil sabores.png">
     </section>
 
-    <section class="Nuestros-productos-mas-comprados">
+    <section class="productos-destacados container">
         <h2>Nuestros productos mas comprados</h2>
-        <img height="200px" src="img/torta cuadrada chocolate.webp">
-        <h3>torta cuadrada chocolate</h3>
-        <p class="Precio">$20000</p>
+        <div class="productos-content">
+
+          <div class="Tortas-Cuadradas">
+            <img height= "200px" src="img/torta cuadrada.avif" alt="">
+            <h3>Torta Cuadrada de chocolate</h3>
+          </div>
+
+          <div class="Tortas-Circulares">
+            <img height= "200px" src="img/torta circular.jpg" alt="">
+            <h3>Torta Circular de Vainilla</h3>
+          </div>
+
+          <div class="Postres-Individuales">
+            <img height= "200px" src="img/mousse-de-chocolate.webp" alt="">
+            <h3>Mousse de Chocolate</h3>
+          </div>
+
+          <div class="Productos-Sin-Azúcar ">
+            <img height= "200px" src="img/Torta-Naranja-–-Sin-Azucar-01.webp" alt="">
+            <h3>Torta Sin Azúcar de Naranja</h3>
+          </div>
+
+        </div>
     </section>
 
-    <section id="usuarios">
-      <div class="container">
+
+    <section class="productos container">
+
+      <h2>Catalogo</h2>
+
+      <div class="box-container" id="lista-1">
+
+        <div class="box">
+          <img src="img/mousse-de-chocolate.webp" alt="">
+          <div class="product-txt">
+            <h3>mousse-de-chocolate</h3>
+            <p class="precio">$20000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/mousse-de-chocolate.webp" alt="">
+          <div class="product-txt">
+            <h3>mousse-de-chocolate</h3>
+            <p class="precio">$20000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/mousse-de-chocolate.webp" alt="">
+          <div class="product-txt">
+            <h3>mousse-de-chocolate</h3>
+            <p class="precio">$20000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/mousse-de-chocolate.webp" alt="">
+          <div class="product-txt">
+            <h3>mousse-de-chocolate</h3>
+            <p class="precio">$20000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/mousse-de-chocolate.webp" alt="">
+          <div class="product-txt">
+            <h3>mousse-de-chocolate</h3>
+            <p class="precio">$20000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/mousse-de-chocolate.webp" alt="">
+          <div class="product-txt">
+            <h3>mousse-de-chocolate</h3>
+            <p class="precio">$20000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/mousse-de-chocolate.webp" alt="">
+          <div class="product-txt">
+            <h3>mousse-de-chocolate</h3>
+            <p class="precio">$20000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/mousse-de-chocolate.webp" alt="">
+          <div class="product-txt">
+            <h3>mousse-de-chocolate</h3>
+            <p class="precio">$20000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/mousse-de-chocolate.webp" alt="">
+          <div class="product-txt">
+            <h3>mousse-de-chocolate</h3>
+            <p class="precio">$20000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/mousse-de-chocolate.webp" alt="">
+          <div class="product-txt">
+            <h3>mousse-de-chocolate</h3>
+            <p class="precio">$20000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/mousse-de-chocolate.webp" alt="">
+          <div class="product-txt">
+            <h3>mousse-de-chocolate</h3>
+            <p class="precio">$20000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/mousse-de-chocolate.webp" alt="">
+          <div class="product-txt">
+            <h3>mousse-de-chocolate</h3>
+            <p class="precio">$20000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/mousse-de-chocolate.webp" alt="">
+          <div class="product-txt">
+            <h3>mousse-de-chocolate</h3>
+            <p class="precio">$20000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/mousse-de-chocolate.webp" alt="">
+          <div class="product-txt">
+            <h3>mousse-de-chocolate</h3>
+            <p class="precio">$20000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/mousse-de-chocolate.webp" alt="">
+          <div class="product-txt">
+            <h3>mousse-de-chocolate</h3>
+            <p class="precio">$20000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/mousse-de-chocolate.webp" alt="">
+          <div class="product-txt">
+            <h3>mousse-de-chocolate</h3>
+            <p class="precio">$20000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+          </div>
+        </div>
 
       </div>
+
+      <div class="btn-2" id="load-more">Cargar Mas</div>
     </section>
 
 
 </main>
+
+<footer class="info">
+
+      <img class=""  src="" alt="">
+      <div class="info-content container">
+
+        <div class="info-img">
+          <img src="" alt="">
+        </div>
+
+        <div class="info.txt">
+          <h2>la mejor calidad en reposteria</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Temporibus dolorem ea illum exercitationem quaerat eius error sequi modi? 
+            Nihil labore nesciunt adipisci alias deleniti 
+            nobis corporis dolore tempore earum amet.
+          </p>
+          <a href="#" class="btn-1">informacion</a>
+
+        </div>
+
+      </div>
+
+</footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <script src="function.js"></script>
