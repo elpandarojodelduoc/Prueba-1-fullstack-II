@@ -7,54 +7,60 @@
     <link rel="stylesheet" href="style.css">
     <title>Pasteleria mil sabores</title>
 </head>
+
+
 <body>
-    <header>
-        <h1>Pasteleria mil sabores</h1>
-    </header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index2.html">Categorias</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+  <header>
+    <a href="#inicio" class="logo">Pasteleria mil sabores</a>
+    <nav id="nav-menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#Catalogo">Catalogo</a>
+      <a href="#crear-cuenta">crear-cuenta</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button id="menu-btn">Menu</button>
+    <div>
+      <ul>
+        <li class="submenu"> 
+          <img height= "30px" src="img/carrito.jpg" id="img-carrito" alt="carrito">
+          <div id="carrito">
+            <table id="lista-carrito">
+              <th>
+                <tr>
+                  <th>imagen</th>
+                  <th>nombre</th>
+                  <th>precio</th>
+                  <th></th>
+                </tr>
+              </th>
+              <tbody></tbody>
+            </table>
+            <a href="#" id="vaciar carrito" class="btn-3">Vaciar Carrito</a>
+          </div>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
     </div>
-  </div>
-</nav>
-<nav>
-        <ul>
+  </header>
 
-        </ul>
-    </nav>
 <main>
-    <section id="Nuestros productos por categoria">
-        <h2>Nuestros productos por categoria</h2>
-        <h3>Muffin de red velvet</h3>
-        <img height="200px" src="img/muffin redvelvet.png">
-        <p class="Precio">$2000</p>
+    <section id="inicio" class="Presentacion-tienda">
+      <div class="contenido">
+        <h1>Celebrando 50 años de historia</h1>
+        <p>Desde 1974 horneamos las tortas y postres que acompañan los momentos más importantes
+        de miles de familias chilenas. Hoy renovamos nuestra tienda online para que pidas
+        tu torta favorita en pocos clics.</p>
+      </div>
+      <div>
+        <a href="#informacion" class="btn-1">informacion</a>
+      </div>
+      <img height="200px" src="img/pasteleria mil sabores.png">
+    </section>
+
+    <section class="Nuestros-productos-mas-comprados">
+        <h2>Nuestros productos mas comprados</h2>
+        <img height="200px" src="img/torta cuadrada chocolate.webp">
+        <h3>torta cuadrada chocolate</h3>
+        <p class="Precio">$20000</p>
     </section>
 
     <section id="usuarios">
