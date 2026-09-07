@@ -64,7 +64,7 @@ header {
 }
 
 #carrito {
-  display: none;
+  display: true;
   position: absolute;
   right: 0;
   top: 40px;
@@ -168,7 +168,7 @@ header {
     text-align: center;
   }
 }
-/* Catálogo de productos (sección "productos") */
+
 .productos {
   padding: 40px 15px;
   text-align: center;
@@ -226,7 +226,6 @@ header {
   color: white;
 }
 
-/* Sección info (footer) */
 .info {
   background-color: #FFC0CB;
   padding: 40px 15px;
@@ -248,10 +247,66 @@ header {
   max-width: 500px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .info-content {
     flex-direction: column;
     text-align: center;
   }
+}
+.box-container .box:nth-child(n + 5) {
+  display: none;
+}
+.site-footer {
+  background-color: #8B4513;
+  color: #FFF5E1;
+  padding: 40px 15px 20px;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-col {
+  min-width: 180px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  color: #FFC0CB;
+  margin-bottom: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  margin: 4px 0;
+}
+
+.footer-col a {
+  color: #FFF5E1;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 14px;
 }
