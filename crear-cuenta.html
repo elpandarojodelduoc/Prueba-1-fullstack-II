@@ -55,19 +55,22 @@
 
       <form id="form-registro" class="box formulario">
         <label for="registro-nombre">Nombre completo</label>
-        <input type="text" id="registro-nombre" name="nombre">
+        <input type="text" id="registro-nombre" name="nombre" autocomplete="name">
 
         <label for="registro-correo">Correo</label>
-        <input type="email" id="registro-correo" name="correo">
+        <input type="email" id="registro-correo" name="correo" autocomplete="email">
 
         <label for="registro-nacimiento">Fecha de nacimiento</label>
-        <input type="date" id="registro-nacimiento" name="nacimiento">
+        <input type="date" id="registro-nacimiento" name="nacimiento" autocomplete="bday">
 
         <label for="registro-codigo">Codigo promocional (opcional)</label>
-        <input type="text" id="registro-codigo" name="codigo">
+        <input type="text" id="registro-codigo" name="codigo" autocomplete="off" list="sugerencias-codigo">
+        <datalist id="sugerencias-codigo">
+          <option value="FELICES50"></option>
+        </datalist>
 
         <label for="registro-clave">Contraseña</label>
-        <input type="password" id="registro-clave" name="clave">
+        <input type="password" id="registro-clave" name="clave" autocomplete="new-password">
 
         <p id="error-registro" class="mensaje-error"></p>
         <p id="beneficio-registro" class="mensaje-beneficio"></p>
