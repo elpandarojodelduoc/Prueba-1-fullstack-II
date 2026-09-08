@@ -64,28 +64,52 @@ header {
 }
 
 #carrito {
-  display: true;
+  display: none;
   position: absolute;
   right: 0;
   top: 40px;
-  width: 250px;
+  width: 280px;
   background-color: white;
   border: 1px solid #B0BEC5;
+  border-radius: 8px;
   padding: 10px;
   z-index: 10;
 }
 
-#lista-carrito {
+#lista-carrito,
+#lista-carrito-pagina {
   width: 100%;
   border-collapse: collapse;
   font-size: 14px;
 }
 
 #lista-carrito th,
-#lista-carrito td {
+#lista-carrito td,
+#lista-carrito-pagina th,
+#lista-carrito-pagina td {
   border-bottom: 1px solid #B0BEC5;
   padding: 5px;
   text-align: left;
+}
+
+#lista-carrito td img,
+#lista-carrito-pagina td img {
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.borrar {
+  color: #B3401E;
+  font-weight: bold;
+}
+
+.btn-vaciar-carrito,
+.btn-ver-carrito {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 8px;
 }
 
 .btn-1, .btn-3 {
@@ -309,4 +333,65 @@ header {
   padding-top: 15px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 14px;
+}
+
+.formulario-seccion {
+  padding: 40px 15px;
+}
+
+.formulario {
+  max-width: 450px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #B0BEC5;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+.mensaje-error {
+  color: #B3401E;
+  font-weight: bold;
+}
+
+.mensaje-beneficio {
+  color: #4b7f52;
+  font-weight: bold;
+}
+
+.pagina-info {
+  padding: 40px 15px;
+  max-width: 700px;
+}
+
+.pagina-carrito {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.pagina-carrito #lista-carrito-pagina {
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+#total-carrito {
+  max-width: 700px;
+  margin: 10px auto 20px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 18px;
 }
